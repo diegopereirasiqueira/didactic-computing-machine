@@ -1,24 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
 
-{
 
-int INDICE = 13, SOMA = 0, K = 0;
+int main() {
+  char s[51], sAux[51];
 
-   while(K < INDICE){
+  printf("Entrada: ");
+  scanf("%[^\n]s", &s);
 
-       K = K + 1;
+  int i, j, n;
 
-       SOMA = SOMA + K;
+  n = strlen(s); // retorna o tamanho do String "s"
 
-   }
+  j = n - 1; // valor da última posição
+  for(i=0; i<n; i++) {
+    sAux[i] = s[j];
+    j = j - 1;
+  }
 
-   printf("%d",SOMA);
+  sAux[i] = '\0'; // terminador (finaliza a String "sAux")
 
-return 0;
+  printf("\n");
+  printf("Entrada: %s\n", s);
+  printf("Saida..: %s\n", sAux);
 
+  return(0);
 }
-
-
