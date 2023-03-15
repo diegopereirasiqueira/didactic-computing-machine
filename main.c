@@ -1,29 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int main()
+{
+ Termo1 = int(0);
+ Termo2 = int(1);
+ Termo3 = int(0)
+print ('-' *42)
+print (' ' *3, 'Consulta da Sequência de Fibonacci')
+print ('-' *42)
+Valor = int(input('Digite um número: '))
+  while Valor > Termo3:
+Termo3 = Termo1 + Termo2
+Termo1 = Termo2
+Termo2 = Termo3
+  if Valor == 0 or Valor == 1:
+print ('O número faz parte da sequência de Fibonacci.')
+elif Valor == Termo3:
+print ('O número faz parte da sequência de Fibonacci.')
+  else:
+print ('O número digitado não faz parte da sequência de Fibonacci.')
 
 
-int main() {
-  char s[51], sAux[51];
-
-  printf("Entrada: ");
-  scanf("%[^\n]s", &s);
-
-  int i, j, n;
-
-  n = strlen(s); // retorna o tamanho do String "s"
-
-  j = n - 1; // valor da última posição
-  for(i=0; i<n; i++) {
-    sAux[i] = s[j];
-    j = j - 1;
-  }
-
-  sAux[i] = '\0'; // terminador (finaliza a String "sAux")
-
-  printf("\n");
-  printf("Entrada: %s\n", s);
-  printf("Saida..: %s\n", sAux);
-
-  return(0);
+    return 0;
 }
